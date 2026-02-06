@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        :root {
+            --font-size: 20px;
+            --card-bg: #e0e0e0;
+            --card-text: #333;
+            --card-padding: 20px;
+            --card-border-radius: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1,
+        p {
+            font-size: var(--font-size);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            color: var(--card-text);
+            padding: var(--card-padding);
+            border-radius: var(--card-border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph text</p>
+
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>This is the first card using CSS variables.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>This is the second card using the same CSS variables.</p>
+    </div>
+</body>
+
+</html>

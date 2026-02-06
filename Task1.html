@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        :root {
+            --main-color: blue;
+        }
+
+        p {
+            color: var(--main-color);
+        }
+
+        :root {
+            --secondary-color: red;
+        }
+
+        .dark {
+            --main-color: red;
+            --secondary-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This text uses color from :root</h1>
+    <p>This text uses color from :root</p>
+
+
+    <button onclick="toggleMode()">Toggle</button>
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+
+
+</html>
